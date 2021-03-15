@@ -40,11 +40,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-    Gif(s): 
-    * winning condition: https://github.com/heylookitsme/SITE-pre-work/win-cond.gif
-    * abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/abberant-cond.gif
-    * resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/flow-layout.gif
-        * hey, resizing the window is *always* cool. 
+Gif(s): 
+* winning condition: https://github.com/heylookitsme/SITE-pre-work/win-cond.gif
+* abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/abberant-cond.gif
+* resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/flow-layout.gif
+    * hey, resizing the window is *always* cool. 
 
 EDIT: I realized the frame rate for my gifs is so low that when I double click somewhat quickly, it almost looks like I am single clicking. I promise I am double clicking. 
     Video coming soon.
@@ -52,15 +52,18 @@ EDIT: I realized the frame rate for my gifs is so low that when I double click s
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
     I used duckduckgo to get bootstrap and style buttons(https://www.bootstrapcdn.com/, https://getbootstrap.com/docs/4.0/components/buttons/). I also used https://stackoverflow.com for editor/shortcut key help. 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+
     A challenge that I encounted creating this submission was an off by one error pertaining to the guessCount/progress for each "turn". I believe I had trouble with this portion in part because I sped read the description too fast, but also because the variable names were a bit nondescript (?). I had to take a minute to really Digest what I was doing after weaning off pretty linear HTML/CSS. 
     My issue in particular was that I was checking the win condition to be when the "progress" variable was *exactly* equal to the pattern length, instead of checking if "*progress+1* == pattern.length" (because that is just how the offset of the game makes that occur). 
     I overcame this particular error by, frankly, just debugging really hard in the console. I "played" the game (set progress=6 and went from there) a couple of times, printed all the variables that were relevant to the guess() segment of code (gamePlaying, guessCounter, pattern.length) until I realised "oh, the progress variable is not equivocal to the pattern.length variable when it is supposed to be". 
     Another hiccup I had was that some of the "lit" buttons were not lighting, etc. This was because I duplicated lines too hard and forgot to increment each line (button1.lit --> button2.lit). I overcame this by inspecting element really hard and realising "oh, this red button has the lit class, but is not lighting after the light() function" --> looking back at the css and realizing that I had misnamed the active portion of the class. 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+
     Is it not better to render the different button and button states with a framework like React? especially if you have to scale with, say, >10 buttons. 
 
     Isn't it also really expensive to do so much work in the DOM? I suppose its unavoidable, and for such a small game it doesn't really matter, but some stuff that was asked of the project (changing button colors upon "lit"/start stop button toggle) can be done with local cookies or other "css hacks" I belive. Would it be worth it to do that for such a small game? On a larger scale?
@@ -70,6 +73,7 @@ EDIT: I realized the frame rate for my gifs is so low that when I double click s
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+
     I do have a few more hours on this project and I will probably work on this in a bit. 
 
     However, to answer the question: 
