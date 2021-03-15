@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Light and Sound Memory Game</title>
+
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!--bootstrap imports-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="./script.js" defer></script>
+</head>  
+
+<body>
+  <h1>Light and Sound Memory Game</h1>
+  <button class="btn btn-success" id="startBtn" onclick="startGame()" >Start</button>
+  <button class="btn btn-danger hidden" id="stopBtn" onclick="stopGame()">End</button> 
+
+  <div id="gameButtonArea">
+    <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button> 
+    <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button> 
+    <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button> 
+    <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button> 
+  </div>
+</body>
+
+</html>
