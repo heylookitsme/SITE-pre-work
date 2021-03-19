@@ -38,18 +38,10 @@ The following **additional** features are implemented:
 - [x] added some css animations to make it look pretty, and media queries to suit mobile. 
 
 ## Video Walkthrough
-
-Here's a walkthrough of implemented user stories(OLD):
-    Gif(s): 
-    winning condition: https://github.com/heylookitsme/SITE-pre-work/win-cond.gif
-    abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/abberant-cond.gif
-    resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/flow-layout.gif
-        hey, resizing the window is *always* cool. 
-
-Gif(s): 
-* winning condition: https://github.com/heylookitsme/SITE-pre-work/win-cond.gif
-* abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/abberant-cond.gif
-* resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/flow-layout.gif
+Gif(s) (**OLD**): 
+* winning condition: https://github.com/heylookitsme/SITE-pre-work/blob/main/win-cond.gif
+* abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/blob/main/abberant-cond.gif
+* resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/blob/main/flow-layout.gif
     * hey, resizing the window is *always* cool. 
 
 EDIT: I realized the frame rate for my gifs is so low that when I double click somewhat quickly, it almost looks like I am single clicking. I promise I am double clicking. 
