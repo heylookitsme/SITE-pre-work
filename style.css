@@ -5,17 +5,70 @@ body {
   margin: 2em;
   background-color: slategrey;
   color: white; 
+  text-align: center;
+  font-size: 1.5em;
 }
 
 h1 {
-  font-family: verdana, arial, sans-serif; 
+  font-family: verdana, arial, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 /* buttons for game area should be reasonably sized for clicking */
-#gameButtonArea > button {
-  width:200px;
-  height:200px;
+.gameBtn {
+  width:15em;
+  height:15em;
   margin:2px;
+  border-radius: 1em;
+  border: none;
+  transition: all 150ms ease-out;
+  background-color: lightgrey; 
+}
+
+/* for smaller windows */
+@media screen and (max-width: 800px) {
+  .gameBtn {
+    width:12em;
+    height:12em;
+    margin:2px;
+  }
+}
+
+#gameButtonArea{
+  margin-bottom: 10px;
+}
+
+.logicBtn {
+  border-radius: 2px;
+  border: none;
+  padding: 7px 12px 7px 12px;
+  margin: 3px;
+  font-size: 20px;
+  color: white;
+  background-color: #49a9b9;
+  transition: all 300ms ease;
+  transition-delay: 100ms;
+}
+
+.logicBtn:hover {
+  background-color: #1accea;
+}
+
+#startBtn {
+  background-color: green;
+}
+
+#startBtn:hover {
+  background-color: #0bca0b;
+}
+
+#stopBtn {
+  background-color: #bf2919;
+}
+
+#stopBtn:hover {
+  background-color: #df2222;
 }
 
 /* for elements that are to be hidden */
@@ -23,6 +76,11 @@ h1 {
   display: none;
 }
 
+
+/* default button css */
+#optionalBtns > button:active, button.lit {
+  background:red;
+}
 #button1 {
   background: lightgreen;
 }

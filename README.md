@@ -4,7 +4,7 @@
 
 Submitted by: **Rachel** "Rei"
 
-Time spent: **2.5** hours spent in total (so far, including documentation) 
+Time spent: **5.5** hours spent in total (so far, including documentation) 
 
 Link to project: https://github.com/heylookitsme/SITE-pre-work
 
@@ -24,9 +24,9 @@ The following **optional** features are implemented:
 
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
-* [ ] More than 4 functional game buttons
+* [x] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
-* [ ] Computer picks a different pattern each time the game is played
+* [x] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
@@ -34,11 +34,12 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [x] added a "settings" panel to play the game through
+- [x] added some css animations to make it look pretty, and media queries to suit mobile. 
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories(OLD):
     Gif(s): 
     winning condition: https://github.com/heylookitsme/SITE-pre-work/win-cond.gif
     abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/abberant-cond.gif
@@ -68,19 +69,17 @@ Here's a walkthrough of implemented user stories:
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-    I do have a few more hours on this project and I will probably work on this in a bit. 
-
-    However, to answer the question: 
+    **update: some features have since been implemented, those features are struck out until I rewrite the entire readme** 
 
     **In terms of style** I would really try to search up the best practices for style/dynamic components like the buttons in the game/the start stop/any additional features I would implement. Of course, it is not like performance would drastically alter the experience of such a simple game, but when you can have good performance and experience, you might as well develop it. 
     I think I will also consider the additional optional recommendations as I work on this a bit more in the coming week. Personally, I think the style is a little bland, and I think changing the flow layout/layout of the buttons to be centered, as well as optimizing for mobile is a good idea. ease-in animations for the lighting buttons is also pretty contemporary and cute too, so I would probably look to implement this. 
 
     **In terms of logic**
-    I really Don't Like the lightButton() functions + editing the DOM for the start/stop toggle because I don't know if they can be... done better, and the functions are messy. I'm probably going to refactor the guessCounter/progress variables to something more... descriptive. I would *like* to also shuffle away the AudioContext functions into another file of helper functions. I would also like to change the alerts for winning and losing to just be HTML/CSS elements because I don't like alerts. 
+    I really Don't Like the lightButton() functions + editing the DOM for the start/stop toggle because I don't know if they can be... done better, and the functions are messy. ~~I'm probably going to refactor the guessCounter/progress variables to something more... descriptive.~~ I would *like* to also shuffle away the AudioContext functions into another file of helper functions. I would also like to change the alerts for winning and losing to just be HTML/CSS elements because I don't like alerts. 
 
 
     **In terms of game design**
-    I think it would be nice to add additional buttons, like the optional recommendations suggest, but also I would like to add different game modes or difficulties (change speed, number of buttons). I think this is nice for a user because when you play a game sometimes a game gets boring if you don't have the repotoire of bajillions of levels like a lot of modern games. Moreover, I would like to implement some random pattern generation, so that the pattern is not fixed, not monotonus. 
+    ~~I think it would be nice to add additional buttons, like the optional recommendations suggest~~, but also I would like to add different game modes or difficulties (change speed, number of buttons). I think this is nice for a user because when you play a game sometimes a game gets boring if you don't have the repotoire of bajillions of levels like a lot of modern games. ~~Moreover, I would like to implement some random pattern generation, so that the pattern is not fixed, not monotonus.~~ 
 
 
 

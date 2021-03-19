@@ -7,32 +7,36 @@
 
   <title>Light and Sound Memory Game</title>
 
-  <!--jquery-->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-  <!--bootstrap imports-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="./style.css">
 
   <!-- import the webpage's javascript file -->
-  <script src="./script.js" defer></script>
+  <script src="./script.js"></script>
 </head>  
 
 <body>
   <h1>Light and Sound Memory Game</h1>
-  <button class="btn btn-success" id="startBtn" onclick="startGame()" >Start</button>
-  <button class="btn btn-danger hidden" id="stopBtn" onclick="stopGame()">End</button> 
 
   <div id="gameButtonArea">
-    <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button> 
-    <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button> 
-    <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button> 
-    <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button> 
+    <button class="gameBtn" id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button> 
+    <button class="gameBtn" id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button> 
+    <button class="gameBtn" id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button> 
+    <button class="gameBtn" id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button> 
+    <span id="optionalBtns"></span>
   </div>
+
+  <p class="hidden" id="timer"></p><p class="hidden" id="strikes"><br></p>
+  
+  <!-- meta-game, settings-->
+  <span><button class="logicBtn" id="startBtn" onclick="startGame()" >Start</button>
+  <button class="logicBtn hidden" id="stopBtn" onclick="stopGame()">End</button></span>
+  
+  <span><button class="logicBtn" onclick="toggleSettingsPanel()">Settings</button></span>
+
+  <div id="settingsPanel" class="hidden">
+    number of buttons (between 4 and 10): <input type="number" onchange="changeNumButtons()" id="numButtons" min="4" max="10"><br>
+  </div>
+
 </body>
 
 </html>
