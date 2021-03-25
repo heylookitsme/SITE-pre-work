@@ -43,7 +43,7 @@ Gif(s):
 * abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/blob/main/abberant-condition.gif
 * resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/blob/main/flow-layout-media-query.gif
     * hey, resizing the window is *always* cool. 
-* settings button/changing number of buttons: https://github.com/heylookitsme/SITE-pre-work/blob/main/settings-button-win.gif
+* settings button/changing number of buttons: https://github.com/heylookitsme/SITE-pre-work/blob/main/settings-buttons-win.gif
 
 EDIT: I realized the frame rate for my gifs is so low that when I double click somewhat quickly, it almost looks like I am single clicking. I promise I am double clicking. 
     Video coming soon.
