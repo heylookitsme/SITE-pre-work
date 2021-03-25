@@ -38,11 +38,12 @@ The following **additional** features are implemented:
 - [x] added some css animations to make it look pretty, and media queries to suit mobile. 
 
 ## Video Walkthrough
-Gif(s) (**OLD**): 
+Gif(s): 
 * winning condition: https://github.com/heylookitsme/SITE-pre-work/blob/main/win-cond.gif
-* abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/blob/main/abberant-cond.gif
-* resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/blob/main/flow-layout.gif
+* abberant conditions (failing to win, pressing too many buttons at once, starting/stopping without having completed a turn): https://github.com/heylookitsme/SITE-pre-work/blob/main/abberant-condition.gif
+* resizing the window/style: https://github.com/heylookitsme/SITE-pre-work/blob/main/flow-layout-media-query.gif
     * hey, resizing the window is *always* cool. 
+* settings button/changing number of buttons: https://github.com/heylookitsme/SITE-pre-work/blob/main/settings-button-win.gif
 
 EDIT: I realized the frame rate for my gifs is so low that when I double click somewhat quickly, it almost looks like I am single clicking. I promise I am double clicking. 
     Video coming soon.
@@ -64,26 +65,22 @@ EDIT: I realized the frame rate for my gifs is so low that when I double click s
 
     Is it not better to render the different button and button states with a framework like React? especially if you have to scale with, say, >10 buttons. 
 
-    Isn't it also really expensive to do so much work in the DOM? I suppose its unavoidable, and for such a small game it doesn't really matter, but some stuff that was asked of the project (changing button colors upon "lit"/start stop button toggle) can be done with local cookies or other "css hacks" I belive. Would it be worth it to do that for such a small game? On a larger scale?
+    Isn't it also really expensive to do so much work in the DOM? Though, I know some stuff that was asked of the project (changing button colors upon "lit"/start stop button toggle) can be done with local cookies or other "css hacks". Would it be worth it to do that for such a small game? On a larger scale?
 
     Was it deliberate to have buttons be pressable regardless of the game state? (gamePlaying = true/false)
-    Why were we asked to use glitch? Would... we actually be writing code in this? 
-
+    Why were we asked to use glitch as an IDE? 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-    **update: some features have since been implemented, those features are struck out until I rewrite the entire readme** 
 
-    **In terms of style** I would really try to search up the best practices for style/dynamic components like the buttons in the game/the start stop/any additional features I would implement. Of course, it is not like performance would drastically alter the experience of such a simple game, but when you can have good performance and experience, you might as well develop it. 
-    I think I will also consider the additional optional recommendations as I work on this a bit more in the coming week. Personally, I think the style is a little bland, and I think changing the flow layout/layout of the buttons to be centered, as well as optimizing for mobile is a good idea. ease-in animations for the lighting buttons is also pretty contemporary and cute too, so I would probably look to implement this. 
+    **In terms of style** I would really try to search up the best practices for style/dynamic components like the buttons in the game/the start stop/any additional features I would implement. Of course, it is not like performance would drastically alter the experience of such a simple game, but when you can have good performance and experience, you might as well develop it. I would also like to auto-generate colors and patterns for the buttons.
 
     **In terms of logic**
-    I really Don't Like the lightButton() functions + editing the DOM for the start/stop toggle because I don't know if they can be... done better, and the functions are messy. ~~I'm probably going to refactor the guessCounter/progress variables to something more... descriptive.~~ I would *like* to also shuffle away the AudioContext functions into another file of helper functions. I would also like to change the alerts for winning and losing to just be HTML/CSS elements because I don't like alerts. 
+    I really Don't Like the lightButton() functions + editing the DOM for the start/stop toggle because I don't know if they can be... done better, and the functions are messy. I would *like* to also shuffle away the AudioContext functions into another file of helper functions. I would also like to change the alerts for winning and losing to just be HTML/CSS elements because I don't like alerts. 
 
 
     **In terms of game design**
-    ~~I think it would be nice to add additional buttons, like the optional recommendations suggest~~, but also I would like to add different game modes or difficulties (change speed, number of buttons). I think this is nice for a user because when you play a game sometimes a game gets boring if you don't have the repotoire of bajillions of levels like a lot of modern games. ~~Moreover, I would like to implement some random pattern generation, so that the pattern is not fixed, not monotonus.~~ 
-
+    I would like to add different game modes or difficulties (change speed, number of buttons). I think this is nice for a user because when you play a game, so that they have more features to interact with. I also want to fully implement an interactive "how to play" menu so that the player knows how to play. 
 
 
 ## License

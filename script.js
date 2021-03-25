@@ -77,6 +77,9 @@ function playClueSequence(){
    let delay = nextClueWaitTime; //set delay to initial wait time
    guessesMade =0;
 
+   // todo: now that I look at this function I hate it more and more, but 
+   // as this is SITE-given code, does that mean this was done for an optimization 
+   // reason?
    for(let i=0;i<=currSubseqLen;i++){ // for each clue that is revealed so far
       console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
       setTimeout(playSingleClue,delay,pattern[i]); // set a timeout to play that clue
